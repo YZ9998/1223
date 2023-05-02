@@ -53,7 +53,7 @@
 }
 
 
-@media screen and (min-width:1000px){ /*電腦*/ 
+@media screen and (min-width:768px){ /*電腦 平板*/ 
 
 .timeline h2{
    color:red;
