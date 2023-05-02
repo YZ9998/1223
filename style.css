@@ -55,9 +55,6 @@
 
 @media screen and (min-width:768px){ /*電腦 平板*/ 
 
-.timeline h2{
-   color:red;
-}
 .timeline ul{
 display:flex;
 }
