@@ -25,11 +25,10 @@
   font-family:"SimSun";
 }       
 .timeline{
-  padding: 50px;
+  padding: 20px;
 }
 .timeline li{
-  width: 50%;
-  display: block;
+  width: 100%;
   box-sizing:Border-box ;
   padding: 10px;
   list-style: none;
@@ -37,18 +36,8 @@
   background-color:#FCF7E3;
 }
        
-.timeline li:nth-child(odd){
-  float: left;
-  padding-right: 50px;
-  
-}
-.timeline li:nth-child(even){
-  float:right;
-  padding-left: 50px;
-  transform:translateY(50%);
-}
 .timeline a{
-  width:50%;
+  width:100%;
   display: block;
   text-decoration: none;
   padding: 50px;
@@ -75,32 +64,41 @@
 }
 } 
 
-@media screen and (max-width:500px){ 
+@media screen and (min-width:1000px){ /*電腦*/ 
 .timeline{
-  padding: 20px;
+  padding: 50px;
 }
 .timeline li{
-  width: 100%;/**/
-  display: block;
-  box-sizing:Border-box ;
+  width: 50%;
+  display: flex;
+  box-sizing:border-box;
   padding: 10px;
   list-style: none;
   margin: 1%;
   background-color:#FCF7E3;
+}
+.timeline li:nth-child(odd){
+  float: left;
+  padding-right: 50px;
+  
+}
+.timeline li:nth-child(even){
   float:right;
-  padding-left: 50px; 
+  padding-left: 50px;
+  transform:translateY(20%);
 }
 .timeline a{
-  width:100%;
+  width:50%;
   display: block;
   text-decoration: none;
-  padding: 20px;
-  
+  padding: 50px;
   border: 1px solid #333;
   border-radius: 8px;
   box-shadow:8px 8px 10px #999 ; /*陰影*/
   
 }
+    
+    
 }
 
 .top_back{
@@ -115,7 +113,7 @@
     document.querySelector(".fade-in").classList.add("show");
   }
 </script>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" >
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,shrink-to-fit=no" >
 </head>
 <body style="background-color:#FCF7E3;font-size: 20px;"  class="fade-in">
     <div class="wrap">
