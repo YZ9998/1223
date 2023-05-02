@@ -1,0 +1,104 @@
+  .fade-in {
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
+  }
+  .fade-in.show {
+    opacity: 1;
+  }
+
+.wrap{
+  width: auto;
+  font-family:"SimSun";
+}       
+.timeline{
+  padding: 10px;
+  margin-left:10%;
+}
+.timeline li{
+  width: 100%;
+  box-sizing:Border-box ;
+  padding: 10px;
+  list-style: none;
+  margin: auto auto 10px auto;
+  background-color:#FCF7E3;
+}
+       
+.timeline a{
+  width:100%;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow:8px 8px 10px #999 ; /*陰影*/
+  
+}
+ 
+.timeline img{
+  display:flex;
+
+}
+.timeline h2{
+  color: #333;
+  font-weight: 700;
+  margin-bottom:0;
+  
+}
+.timeline p{
+  color:#555;
+  width: auto;
+  display: flex;
+  margin-top:0;
+}
+
+
+@media screen and (min-width:1000px){ /*電腦*/ 
+
+.timeline h2{
+   color:red;
+}
+.timeline ul{
+display:flex;
+}
+.timeline{
+  padding: 50px;
+}
+.timeline li{
+  width: 50%;
+  display: flex;
+  box-sizing:border-box;
+  padding: 10px;
+  list-style: none;
+  margin: 1%;
+  background-color:#FCF7E3;
+}
+.timeline li:nth-child(odd){
+  float: left;
+  padding-right: 50px;
+  
+}
+.timeline li:nth-child(even){
+  float:right;
+  padding-left: 50px;
+  transform:translateY(20%);
+}
+.timeline a{
+  width:50%;
+  display: block;
+  text-decoration: none;
+  padding: 50px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow:8px 8px 10px #999 ; /*陰影*/
+  
+}
+    
+    
+}
+
+.top_back{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
