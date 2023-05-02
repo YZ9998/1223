@@ -20,43 +20,24 @@
     opacity: 1;
   }
 
-.b{
-    background-color: #436DBF; /* 设置背景颜色 */
-    color: white; /* 设置文本颜色 */
-    padding: 10px 20px; /* 设置内边距 */
-    text-align: center; /* 设置文本居中 */
-    font-size: 16px; /* 设置字体大小 */
-    margin: 10px 2px; /* 设置外边距 */
-    border-radius: 8px; /* 添加圆角效果 */
-    border-color: white;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    margin-top:40%;     
-}
-.b a{
-  text-decoration: none;
-}
+
 
 .wrap{
   width: auto;
 }
-.timeline{
+ .timeline{
   padding: 50px;
 }
 .timeline li{
-  width: 50%;
+  width: 100%;/**/
   display: block;
   box-sizing:Border-box ;
   padding: 10px;
   list-style: none;
   margin: 1%;
   background-color:#FCF7E3;
-  
-
-
-
 }
+       
 .timeline li:nth-child(odd){
   float: left;
   padding-right: 50px;
@@ -65,10 +46,9 @@
 .timeline li:nth-child(even){
   float:right;
   padding-left: 50px;
-  transform:translateY(50%);
 }
 .timeline a{
-  width:50%;
+  width:100%;
   display: block;
   text-decoration: none;
   padding: 50px;
@@ -92,13 +72,48 @@
   width: auto;
   display: flex;
 }
+} 
 
-.teel li{
+@media screen and (min-width:900px){ 
+.wrap{
+  width: auto;
+}       
+.timeline{
+  padding: 50px;
+}
+.timeline li{
+  width: 50%;
+  display: block;
+  box-sizing:Border-box ;
+  padding: 10px;
   list-style: none;
+  margin: 1%;
+  background-color:#FCF7E3;
 }
-.teel h2{
-  font-weight: 500px;
+       
+.timeline li:nth-child(odd){
+  float: left;
+  padding-right: 50px;
+  
 }
+.timeline li:nth-child(even){
+  float:right;
+  padding-left: 50px;
+  transform:translateY(50%);
+}
+.timeline a{
+  width:50%;
+  display: block;
+  text-decoration: none;
+  padding: 50px;
+  
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow:8px 8px 10px #999 ; /*陰影*/
+  
+}
+}
+
 .top_back{
   position: fixed;
   bottom: 20px;
@@ -111,7 +126,7 @@
     document.querySelector(".fade-in").classList.add("show");
   }
 </script>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="background-color:#FCF7E3;"  class="fade-in">
     <div class="wrap">
